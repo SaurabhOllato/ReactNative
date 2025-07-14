@@ -42,7 +42,8 @@ const AuthScreen = ({ navigation }) => {
         style={{ flex: 1 }}
       >
         <ScrollView contentContainerStyle={styles.container}>
-          <Image
+          <view style={styles.auth}>
+            <Image
             source={require("../assets/delivery.jpg")}
             style={styles.image}
             resizeMode="contain"
@@ -52,6 +53,8 @@ const AuthScreen = ({ navigation }) => {
             <Text style={styles.title}>Be an EatFit Partner</Text>
             <Text style={styles.subtitle}>Get a stable monthly income</Text>
           </View>
+          </view>
+          
 
           <TextInput
             style={styles.input}
@@ -181,5 +184,5 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#e91e63",
     textDecorationLine: "underline",
-  }
+  },
 });
